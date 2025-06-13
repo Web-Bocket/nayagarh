@@ -26,7 +26,7 @@ const MapOfDistrict = () => {
         </div>
       </div>
 
-      <div className=" px-10 flex gap-8 py-5">
+      <div className=" px-10 flex flex-col lg:flex-row gap-8 py-5">
         <div className=" shadow-2xl rounded-b-xl border-b-green-700 border-b-2 ">
           <ul className="w-56  divide-y divide-gray-200">
             <li
@@ -86,6 +86,7 @@ const MapOfDistrict = () => {
           allowFullScreen=""
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
+          title="Interactive Map of Nayagarh, Odisha"
         ></iframe>
       </div>
     </div>

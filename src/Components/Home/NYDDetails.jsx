@@ -6,7 +6,7 @@ export default function NYDDetails() {
     <>
       <section className="bg-gray-300 dark:bg-black dark:text-white">
         <div className="bg-gradient-to-l from-[#63C2FC] to-[#075785] text-white dark:from-[#111212] dark:to-[#4c4c4c]">
-          <ul className="flex justify-evenly items-center gap-16 p-4 cursor-pointer ml-8">
+          <ul className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-8 justify-evenly items-center gap-16 p-4 cursor-pointer ml-8">
             <li>
               <div className="flex items-center justify-center">
                 <img
@@ -86,8 +86,8 @@ export default function NYDDetails() {
             </li>
           </ul>
         </div>
-        <div className="flex ">
-          <div className="max-w-md mx-10 mt-5 mb-5 bg-gradient-to-b from-blue-400 to-blue-200 dark:bg-gradient-to-b dark:from-gray-400 dark:to-gray-400 rounded-lg shadow-lg overflow-hidden">
+        <div className="grid grid-cols-1 lg:grid-cols-3 ">
+          <div className="md:max-w-full lg:max-w-md mx-10 mt-5 mb-5 bg-gradient-to-b from-blue-400 to-blue-200 dark:bg-gradient-to-b dark:from-gray-400 dark:to-gray-400 rounded-lg shadow-lg overflow-hidden">
             <div className="bg-blue-500 dark:bg-gray-500 p-4">
               <h2 className="text-white dark:text-yellow-300 text-lg font-semibold">
                 District at a Glance
@@ -106,7 +106,7 @@ export default function NYDDetails() {
               </p>
             </div>
 
-            <div className="text-right mt-28 px-6 pb-4">
+            <div className="text-right mt-[150px] px-6 pb-4">
               <a
                 href="/"
                 className=" bg-blue-600 dark:bg-gray-500 text-white text-center py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-200"
@@ -116,9 +116,11 @@ export default function NYDDetails() {
             </div>
           </div>
 
-          <div className="bg-white  max-w-2xl  mt-5 mb-5 bg-gradient-to-b from-blue-400 to-blue-200 dark:bg-gradient-to-b dark:from-gray-400 dark:to-gray-400 rounded-lg shadow-lg overflow-hidden">
-            <div className="bg-blue-500 dark:bg-gray-500 p-4 ">
-              <h2 className="text-white dark:text-yellow-300 text-lg font-semibold">Notification</h2>
+          <div className="bg-white md:max-w-full lg:max-w-md max-w-2xl mx-10 mt-5 mb-5 bg-gradient-to-b from-blue-400 to-blue-200 dark:bg-gradient-to-b dark:from-gray-400 dark:to-gray-400 rounded-lg shadow-lg overflow-hidden">
+            <div className="  bg-blue-500 dark:bg-gray-500 p-4 ">
+              <h2 className="text-white dark:text-yellow-300 text-lg font-semibold">
+                Notification
+              </h2>
             </div>
             <div className="p-6 dark:text-yellow-300">
               <p>
@@ -152,7 +154,7 @@ export default function NYDDetails() {
               </button>
             </div>
           </div>
-          <div className="max-w-md mx-10 mt-5 mb-5 bg-gradient-to-b from-blue-400 to-blue-200 dark:bg-gradient-to-b dark:from-gray-400 dark:to-gray-400 rounded-lg shadow-lg overflow-hidden ">
+          <div className="md:max-w-lg lg:max-w-md mx-10 mt-5 mb-5 bg-gradient-to-b from-blue-400 to-blue-200 dark:bg-gradient-to-b dark:from-gray-400 dark:to-gray-400 rounded-lg shadow-lg overflow-hidden ">
             <div className="bg-blue-500 dark:bg-gray-500 dark:text-yellow-300 text-white p-4">
               <h1 className="font-bold">Geographic Location</h1>
             </div>
@@ -161,7 +163,9 @@ export default function NYDDetails() {
                 src="https://nayagarh.odisha.gov.in/sites/default/files/styles/330_330/public/2023-07/nayagrah-district.png?itok=Hh1cq9Et"
                 alt=""
               />
-              <p className="text-center dark:text-yellow-300">Area : 3890 sq km</p>
+              <p className="text-center dark:text-yellow-300">
+                Area : 3890 sq km
+              </p>
               <div className="flex justify-center items-center ">
                 <button className="flex justify-center items-center bg-gray-700 text-white ring-4 px-5 py-1 rounded-lg">
                   <IoLocationOutline />

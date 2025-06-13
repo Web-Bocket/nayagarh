@@ -12,46 +12,47 @@ const Hospitals = () => {
   };
   const HospitalDetails = [
     {
-        name:"Adakata PHC",
-        address:"At/post-Adakata Block-Gania Dist-Nayagarh(Odisha)"
+      name: "Adakata PHC",
+      address: "At/post-Adakata Block-Gania Dist-Nayagarh(Odisha)",
     },
     {
-        name:"Badapandusara CHC",
-        address:"At/post-Badapandusara Block-Nayagarh Dist-Nayagarh(Odisha)"
+      name: "Badapandusara CHC",
+      address: "At/post-Badapandusara Block-Nayagarh Dist-Nayagarh(Odisha)",
     },
     {
-        name:"Baghuapali PHC",
-        address:"At/post-Baghuapalli Block Bhapur Dist-Nayagarh(Odisha)"
+      name: "Baghuapali PHC",
+      address: "At/post-Baghuapalli Block Bhapur Dist-Nayagarh(Odisha)",
     },
     {
-        name:"Bahadajhola PHC",
-        address:"At/post-Bahadajhola Block-Nuagaon Dist-Nayagarh(Odisha)"
+      name: "Bahadajhola PHC",
+      address: "At/post-Bahadajhola Block-Nuagaon Dist-Nayagarh(Odisha)",
     },
     {
-        name:"Balugaon PHC",
-        address:"At/post-Balugaon Block-Nayagarh Dist-Nayagarh(Odisha)"
+      name: "Balugaon PHC",
+      address: "At/post-Balugaon Block-Nayagarh Dist-Nayagarh(Odisha)",
     },
     {
-        name:"Banamalipur-Nuagadiasahi PHC",
-        address:"At/post-Banamalipur-Nuagadiasahi Block-Khandapada Dist-Nayagarh(Odisha)"
+      name: "Banamalipur-Nuagadiasahi PHC",
+      address:
+        "At/post-Banamalipur-Nuagadiasahi Block-Khandapada Dist-Nayagarh(Odisha)",
     },
     {
-        name:"Banigochha PHC",
-        address:"At/post-Banigochha Block Daspalla Dist-Nayagarh(Odisha)"
+      name: "Banigochha PHC",
+      address: "At/post-Banigochha Block Daspalla Dist-Nayagarh(Odisha)",
     },
     {
-        name:"BASANT MANJARI SWASTYA NIWAS,CHANDPUR",
-        address:"At/PO-Chandpur Dist-Nayagarh(Odisha)"
+      name: "BASANT MANJARI SWASTYA NIWAS,CHANDPUR",
+      address: "At/PO-Chandpur Dist-Nayagarh(Odisha)",
     },
     {
-        name:"Bhapur CHC",
-        address:"At/Po-Bhapur Dist-Nayagarh(Odisha)"
+      name: "Bhapur CHC",
+      address: "At/Po-Bhapur Dist-Nayagarh(Odisha)",
     },
     {
-        name:"Biridi PHC",
-        address:"At/post-Biridi Block-Khandapada Dist-Nayagarh(Odisha)"
-    }
-  ]
+      name: "Biridi PHC",
+      address: "At/post-Biridi Block-Khandapada Dist-Nayagarh(Odisha)",
+    },
+  ];
   return (
     <div className="bg-white dark:bg-black dark:text-yellow-300">
       <div>
@@ -68,7 +69,7 @@ const Hospitals = () => {
         </div>
       </div>
 
-      <div className=" px-10 flex gap-8 py-5">
+      <div className=" px-10 flex flex-col lg:flex-row gap-8 py-5">
         <div className=" shadow-2xl rounded-b-lg border-b-2 border-b-green-700">
           <ul className="w-56  divide-y divide-gray-200">
             <li
@@ -97,13 +98,13 @@ const Hospitals = () => {
             </li>
           </ul>
         </div>
-        <div className="grid grid-cols-4 gap-5 ">
-            {HospitalDetails.map((data, index)=>(
-                <div className="shadow-lg rounded-lg space-y-2 p-4 dark:bg-gray-600">
-                    <h1 className="font-bold dark:text-white">{data.name}</h1>
-                    <p>{data.address}</p>
-                </div>
-            ))}
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 ">
+          {HospitalDetails.map((data, index) => (
+            <div className="shadow-lg rounded-lg space-y-2 p-4 dark:bg-gray-600">
+              <h1 className="font-bold dark:text-white">{data.name}</h1>
+              <p>{data.address}</p>
+            </div>
+          ))}
         </div>
       </div>
     </div>

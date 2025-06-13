@@ -11,7 +11,7 @@ const Police = () => {
       : "p-4 hover:bg-[#5bba22] cursor-pointer";
   };
   return (
-    <div  className="bg-white dark:bg-black dark:text-yellow-300">
+    <div className="bg-white dark:bg-black dark:text-yellow-300">
       <div>
         <div>
           <img
@@ -26,7 +26,7 @@ const Police = () => {
         </div>
       </div>
 
-      <div className=" px-10 flex gap-8 py-5">
+      <div className=" px-10 flex flex-col lg:flex-row gap-8 py-5">
         <div className=" shadow-2xl  ">
           <ul className="w-56  divide-y divide-gray-200">
             <li

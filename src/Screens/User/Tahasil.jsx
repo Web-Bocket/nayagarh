@@ -26,7 +26,7 @@ const Tahasil = () => {
         </div>
       </div>
 
-      <div className=" px-10 flex gap-8 py-5">
+      <div className=" px-10 flex flex-col lg:flex-row gap-8 py-5">
         <div className=" shadow-2xl  ">
           <ul className="w-56  divide-y divide-gray-200">
             <li
@@ -80,8 +80,8 @@ const Tahasil = () => {
         </div>
         <div>
           <p className="mb-2">
-            List Of Tahasils in Nayagarh District(Please Click on Tahasil Name to
-            view details)
+            List Of Tahasils in Nayagarh District(Please Click on Tahasil Name
+            to view details)
           </p>
           <div>
             <table className="border-collapse border w-full ">

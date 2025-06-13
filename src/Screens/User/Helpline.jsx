@@ -26,7 +26,7 @@ const Helpline = () => {
         </div>
       </div>
 
-      <div className=" px-10 flex gap-8 py-5">
+      <div className=" px-10 flex flex-col lg:flex-row gap-8 py-5">
         <div className=" shadow-2xl  ">
           <ul className="w-56  divide-y divide-gray-200">
             <li

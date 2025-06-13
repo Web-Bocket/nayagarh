@@ -26,7 +26,7 @@ const Recuirtment = () => {
         </div>
       </div>
 
-      <div className=" px-10 flex gap-8">
+      <div className=" px-10 flex flex-col md:flex-row mb-3 gap-8">
         <div className=" shadow-2xl  ">
           <ul className="w-56  divide-y divide-gray-200">
             <li
@@ -78,7 +78,9 @@ const Recuirtment = () => {
             </ul>
           </ul>
         </div>
-        <div><h1 className="dark:text-white">no content available</h1></div>
+        <div>
+          <h1 className="dark:text-white">no content available</h1>
+        </div>
       </div>
     </div>
   );

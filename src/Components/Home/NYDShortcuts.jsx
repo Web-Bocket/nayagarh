@@ -7,25 +7,31 @@ import { IoArrowForwardCircleSharp } from "react-icons/io5";
 export default function NYDShortcuts() {
   return (
     <>
-      <section className="bg-gradient-to-tr from-blue-900 via-teal-600 to-blue-400 dark:bg-gradient-to-b dark:from-gray-700 dark:via-indigo-600 dark:to-gray-600 grid grid-cols-4">
-        <div className="max-w-md mx-10 mt-5 mb-8 rounded-lg shadow-lg overflow-hidden dark:text-white bg-white dark:bg-black p-5 grid gap-2">
+      <section className="bg-gradient-to-tr from-blue-900 via-teal-600 to-blue-400 dark:bg-gradient-to-b dark:from-gray-700 dark:via-indigo-600 dark:to-gray-600 grid grid-cols-1 lg:grid-cols-4">
+        <div className="md:max-w-lg lg:max-w-md mx-10 mt-5 mb-8 rounded-lg shadow-lg overflow-hidden dark:text-white bg-white dark:bg-black p-5 grid gap-2">
           <h1 className="font-bold text-2xl ">Helpline</h1>
           <p>Covid Helpline</p>
           <h1 className="text-xl">
             <a href="/">
-              <strong className="text-blue-900 dark:text-yellow-300">104 & 06724-221016</strong>
+              <strong className="text-blue-900 dark:text-yellow-300">
+                104 & 06724-221016
+              </strong>
             </a>
           </h1>
           <p>District Emergency Helpline</p>
           <h1>
             <a href="/">
-              <strong className="text-blue-900 dark:text-yellow-300">06725-252978</strong>
+              <strong className="text-blue-900 dark:text-yellow-300">
+                06725-252978
+              </strong>
             </a>
           </h1>
           <p>Citizen's Call Center</p>
           <h1>
             <a href="/">
-              <strong className="text-blue-900 dark:text-yellow-300">155300</strong>
+              <strong className="text-blue-900 dark:text-yellow-300">
+                155300
+              </strong>
             </a>
           </h1>
           <p>Child Helpline</p>
@@ -35,16 +41,20 @@ export default function NYDShortcuts() {
           <p>Women Helpline</p>
           <h1>
             <a href="/">
-              <strong className="text-blue-900 dark:text-yellow-300">1091</strong>
+              <strong className="text-blue-900 dark:text-yellow-300">
+                1091
+              </strong>
             </a>
           </h1>
           <p>
             Helpline for Women in Distress{" "}
-            <strong className="text-blue-900 dark:text-yellow-300">7827170170 </strong>
+            <strong className="text-blue-900 dark:text-yellow-300">
+              7827170170{" "}
+            </strong>
           </p>
         </div>
 
-        <div className="max-w-md mx-10 mt-5 mb-8 rounded-lg shadow-lg  bg-white dark:bg-black dark:text-white p-5 ">
+        <div className="md:max-w-lg lg:max-w-md  mx-10 mt-5 mb-8 rounded-lg shadow-lg  bg-white dark:bg-black dark:text-white p-5 ">
           <h1 className="font-bold text-2xl">Quick Links</h1>
           <ul className="grid gap-3 mt-2">
             <li>
@@ -102,7 +112,7 @@ export default function NYDShortcuts() {
               </div>
             </li>
           </ul>
-          <div className="text-right mt-3 px-6 pb-4">
+          <div className="text-right   lg:mt-[100px] px-6 pb-4">
             <a
               href="/"
               className=" bg-blue-600 dark:bg-gray-500 text-white text-center py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-200"
@@ -111,8 +121,10 @@ export default function NYDShortcuts() {
             </a>
           </div>
         </div>
-        <div className="max-w-md mt-5 mx-10 mb-8 rounded-lg shadow-lg overflow-hidden bg-white dark:bg-black p-2">
-          <h1 className="font-bold text-2xl mb-3 dark:text-white">Media Gallery</h1>
+        <div className="md:max-w-lg lg:max-w-md mt-5 mx-10 mb-8 rounded-lg shadow-lg overflow-hidden bg-white dark:bg-black p-2">
+          <h1 className="font-bold text-2xl mb-3 dark:text-white">
+            Media Gallery
+          </h1>
           <div className="grid grid-cols-2 gap-2">
             <img
               src="https://nayagarh.odisha.gov.in/sites/default/files/styles/photo_gallery_homepage/public/2023-07/SRI%20SRI%20RAGHUNATH%20JEW%20MANDIR%20ODAGAON.jpg?itok=p17uMLA6"
@@ -135,7 +147,7 @@ export default function NYDShortcuts() {
               alt=""
             />
           </div>
-          <div className="text-right mt-[200px] px-6 pb-4">
+          <div className="text-right mt-[150px]  lg:mt-[250px] px-6 pb-4">
             <a
               href="/"
               className=" bg-blue-600 dark:bg-gray-500 text-white text-center py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-200"
@@ -144,7 +156,7 @@ export default function NYDShortcuts() {
             </a>
           </div>
         </div>
-        <div className="flex max-w-md mx-10 mt-5 mb-8 rounded-lg shadow-lg overflow-hidden bg-white dark:bg-black dark:text-white p-5">
+        <div className="flex md:max-w-lg lg:max-w-md mx-10 mt-5 mb-8 rounded-lg shadow-lg overflow-hidden bg-white dark:bg-black dark:text-white p-5">
           <div>
             <h1 className="font-bold text-lg">Social Media</h1>
             <p className="mt-1 text-[#5bba22] dark:text-yellow-300 hover:text-[#0d6efd] hover:underline">

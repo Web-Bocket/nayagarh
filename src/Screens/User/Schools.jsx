@@ -12,46 +12,46 @@ const Schools = () => {
   };
   const SchoolDetails = [
     {
-        name:"A.N. Academy, Nachhipur.",
-        address:"At/PO- Nachhipur, Block- Nayagarh, Dist-Nayagarh, Odisha."
+      name: "A.N. Academy, Nachhipur.",
+      address: "At/PO- Nachhipur, Block- Nayagarh, Dist-Nayagarh, Odisha.",
     },
     {
-        name:"Anchalik High School, Badasahara",
-        address:"At/PO-Badasahara, Block-Bhapur, Dist-Nayagarh, Odisha."
+      name: "Anchalik High School, Badasahara",
+      address: "At/PO-Badasahara, Block-Bhapur, Dist-Nayagarh, Odisha.",
     },
     {
-        name:"A.S. Girls Nodal High School, Kurala",
-        address:'At/PO- Kurala, Block- Odagaon, Dist-Nayagarh, Odisha.'
+      name: "A.S. Girls Nodal High School, Kurala",
+      address: "At/PO- Kurala, Block- Odagaon, Dist-Nayagarh, Odisha.",
     },
     {
-        name:"Anchalik Charudevi High School, Bhapur",
-        address:"At/PO-Bhapur, Block-Bhapur, Dist-Nayagarh, Odisha."
+      name: "Anchalik Charudevi High School, Bhapur",
+      address: "At/PO-Bhapur, Block-Bhapur, Dist-Nayagarh, Odisha.",
     },
     {
-        name:"Anchalika High School, Koska",
-        address:"At/PO-Koska, Block-Khandapada, Dist-Nayagarh, Odisha."
+      name: "Anchalika High School, Koska",
+      address: "At/PO-Koska, Block-Khandapada, Dist-Nayagarh, Odisha.",
     },
     {
-        name:"Ankulai Nodal High School, Mandhatapur.",
-        address:"At/PO- Mandhatapur. Block- Nayagarh, Dist-Nayagarh, Odisha."
+      name: "Ankulai Nodal High School, Mandhatapur.",
+      address: "At/PO- Mandhatapur. Block- Nayagarh, Dist-Nayagarh, Odisha.",
     },
     {
-        name:"B.C. High School, Ranpur",
-        address:"At/PO-Ranpur, Block- Ranpur, Dist-Nayagarh, Odisha."
+      name: "B.C. High School, Ranpur",
+      address: "At/PO-Ranpur, Block- Ranpur, Dist-Nayagarh, Odisha.",
     },
     {
-        name:"B.D. Bidyapitha",
-        address:"At/PO-Bhapur, Block-Bhapur, Dist-Nayagarh, Odisha."
+      name: "B.D. Bidyapitha",
+      address: "At/PO-Bhapur, Block-Bhapur, Dist-Nayagarh, Odisha.",
     },
     {
-        name:"B.K. Nodal High School, Kerandatangi",
-        address:"At/PO-Kerandatangi, Block- Ranpur, Dist-Nayagarh, Odisha."
+      name: "B.K. Nodal High School, Kerandatangi",
+      address: "At/PO-Kerandatangi, Block- Ranpur, Dist-Nayagarh, Odisha.",
     },
     {
-        name:"B.S.K. Nodal Bidyapitha, Baunsagadia",
-        address:"At/PO-Baunsagadia, Block- Odagaon, Dist-Nayagarh, Odisha."
-    }
-  ]
+      name: "B.S.K. Nodal Bidyapitha, Baunsagadia",
+      address: "At/PO-Baunsagadia, Block- Odagaon, Dist-Nayagarh, Odisha.",
+    },
+  ];
   return (
     <div className="bg-white dark:bg-black dark:text-yellow-300">
       <div>
@@ -68,7 +68,7 @@ const Schools = () => {
         </div>
       </div>
 
-      <div className=" px-10 flex gap-8 py-5">
+      <div className=" px-10 flex flex-col lg:flex-row gap-8 py-5">
         <div className=" shadow-2xl  rounded-b-lg border-b-2 border-b-green-700">
           <ul className="w-56  divide-y divide-gray-200">
             <li
@@ -97,13 +97,13 @@ const Schools = () => {
             </li>
           </ul>
         </div>
-        <div className="grid grid-cols-4 gap-5">
-            {SchoolDetails.map((Data,index)=>(
-                <div className="shadow-lg rounded-lg p-4 space-y-2 dark:bg-gray-600">
-                    <h1 className="font-bold dark:text-white">{Data.name}</h1>
-                    <p>{Data.address}</p>
-                </div>
-            ))}
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+          {SchoolDetails.map((Data, index) => (
+            <div className="shadow-lg rounded-lg p-4 space-y-2 dark:bg-gray-600">
+              <h1 className="font-bold dark:text-white">{Data.name}</h1>
+              <p>{Data.address}</p>
+            </div>
+          ))}
         </div>
       </div>
     </div>

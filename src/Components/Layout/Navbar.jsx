@@ -12,8 +12,8 @@ function Navbar() {
   const getLinkClass = (path) => {
     console.log("path======>", path);
     return Location.pathname === path
-      ? "font-bold bg-blue-400 px-2 py-10 text-white cursor-pointer tracking-wide rounded-t-lg"
-      : "font-bold hover:bg-blue-400 hover:text-white hover:rounded-t-lg px-2 py-10 cursor-pointer tracking-wide";
+      ? "lg:font-bold md:font-semibold bg-orange-400 px-2 md:py-5 lg:py-10 text-white cursor-pointer tracking-wide rounded-t-lg"
+      : "lg:font-bold md:font-semibold hover:bg-orange-400 hover:text-white hover:rounded-t-lg px-2 md:py-5 lg:py-10 cursor-pointer tracking-wide";
   };
   const [theme, setTheme] = useState("light");
   useEffect(() => {
@@ -27,15 +27,23 @@ function Navbar() {
   const handelThemeSwitch = () => {
     setTheme(theme === "dark" ? "light" : "dark");
   };
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+  const handleLinkClick = (path) => {
+    navigate(path);
+    setIsMenuOpen(false);
+  };
   return (
     <>
-      <nav className="bg-[#2c2d6c]  text-white ">
-        <div className="mx-10 flex justify-between items-center">
-          <div className="py-3 ">
+      <nav className="md:bg-[#2c2d6c]  lg:text-white hidden md:block w-full">
+        <div className="lg:mx-10 md:mx-5 md:flex md:justify-between md:items-center">
+          <div className="lg:py-3 ">
             <h1>Government of Odisha</h1>
           </div>
 
-          <div className="flex gap-5">
+          <div className="md:flex md:gap-5">
             <section>
               <div className=" border rounded-2xl px-3 py-1 outline-none flex">
                 <input
@@ -80,25 +88,25 @@ function Navbar() {
 
       {/* Navabar 2 */}
 
-      <main className="px-10 flex justify-between items-center bg-white dark:bg-black dark:text-yellow-300">
+      <main className="px-10 hidden md:flex md:justify-between md:items-center bg-white dark:bg-black dark:text-yellow-300">
         <section>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center lg:gap-3">
             <span>
               <img
                 src="https://nayagarh.odisha.gov.in/themes/custom/unee/img/odisha-emblem.svg"
                 alt=""
-                className="h-20 w-16 dark:bg-white dark:invert"
+                className="xl:h-20 xl:w-16 lg:h-16 lg:w-12 md:h-20 md:w-24 dark:bg-white dark:invert"
               />
             </span>
             <span>
-              <h1 className="font-semibold text-xl">NAYAGARH</h1>
+              <h1 className="font-semibold xl:text-xl lg:text-lg">NAYAGARH</h1>
             </span>
           </div>
         </section>
 
         <section>
           <div>
-            <ul className="font-semibold opacity-200 text-sm flex  gap-10">
+            <ul className="font-semibold  text-sm flex  xl:gap-10">
               <div className={getLinkClass("/")} onClick={() => navigate("/")}>
                 <li>Home</li>
               </div>
@@ -141,11 +149,12 @@ function Navbar() {
             </ul>
           </div>
         </section>
-
         <section className="flex items-center">
           <div>
-            <h1 className="font-semibold">Shri Mohan Charan Majhi</h1>
-            <h3>Hon'ble Chief Minister</h3>
+            <h1 className="lg:font-semibold md:text-sm">
+              Shri Mohan Charan Majhi
+            </h1>
+            <h3 className="md:text-xs">Hon'ble Chief Minister</h3>
           </div>
           <div>
             <img
@@ -155,6 +164,86 @@ function Navbar() {
           </div>
         </section>
       </main>
+
+      {/* Mobile Navbar */}
+      <div className="md:hidden flex justify-between items-center px-5 py-3 bg-white dark:bg-black dark:text-yellow-300">
+        <div className="flex items-center gap-3">
+          <span>
+            <img
+              src="https://nayagarh.odisha.gov.in/themes/custom/unee/img/odisha-emblem.svg"
+              alt=""
+              className="h-10 w-10 dark:bg-white dark:invert"
+            />
+          </span>
+          <span>
+            <h1 className="font-semibold text-lg">NAYAGARH</h1>
+          </span>
+        </div>
+        <div className=" border rounded-full p-1 border-white hover:shadow-inner hover:shadow-white">
+          {theme === "dark" ? (
+            <FiSun
+              size={24}
+              className="cursor-pointer hover:text-yellow-300 hover:scale-110"
+              onClick={handelThemeSwitch}
+            />
+          ) : (
+            <IoMoonOutline
+              size={24}
+              className="cursor-pointer hover:scale-110 hover:text-blue-200"
+              onClick={handelThemeSwitch}
+            />
+          )}
+        </div>
+        <button onClick={toggleMenu}>
+          <FaAngleDown size={24} />
+        </button>
+      </div>
+      {isMenuOpen && (
+        <div className="md:hidden flex flex-col items-center bg-white dark:bg-black dark:text-yellow-300">
+          <div
+            className={getLinkClass("/")}
+            onClick={() => handleLinkClick("/")}
+          >
+            <p className="px-5">Home</p>
+          </div>
+          <div
+            className={getLinkClass("/AboutDistrict")}
+            onClick={() => handleLinkClick("/AboutDistrict")}
+          >
+            <p className="flex items-center">
+              About District
+              <FaAngleDown />
+            </p>
+          </div>
+          <div
+            className={getLinkClass("/HowToReach")}
+            onClick={() => handleLinkClick("/HowToReach")}
+          >
+            <p className="flex items-center">
+              Tourism
+              <FaAngleDown />
+            </p>
+          </div>
+          <div
+            className={getLinkClass("/Hospitals")}
+            onClick={() => handleLinkClick("/Hospitals")}
+          >
+            <p className="flex items-center">
+              Hospitality
+              <FaAngleDown />
+            </p>
+          </div>
+          <div
+            className={getLinkClass("/DisasterManagement")}
+            onClick={() => handleLinkClick("/DisasterManagement")}
+          >
+            <p className="flex items-center">
+              More
+              <FaAngleDown />
+            </p>
+          </div>
+        </div>
+      )}
     </>
   );
 }

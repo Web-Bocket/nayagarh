@@ -26,7 +26,7 @@ const Annoucements = () => {
         </div>
       </div>
 
-      <div className=" px-10 flex gap-8">
+      <div className=" px-10 flex flex-col lg:flex-row gap-8">
         <div className=" shadow-2xl  ">
           <ul className="w-56  divide-y divide-gray-200">
             <li
@@ -79,47 +79,83 @@ const Annoucements = () => {
           </ul>
         </div>
         <div>
-            <table>
-                <thead>
-                    <tr>
-                        <th className="bg-green-800 text-white p-2 text-left border-2">Sr. No.</th>
-                        <th className="bg-green-800 text-white p-2 text-left border-2">Title</th>
-                        <th className="bg-green-800 text-white p-2 text-left border-2">Description</th>
-                        <th className="bg-green-800 text-white p-2 text-left border-2">Start Date</th>
-                        <th className="bg-green-800 text-white p-2 text-left border-2">End Date</th>
-                        <th className="bg-green-800 text-white p-2 text-left border-2">Download/Details</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td className="border-2 p-2">1</td>
-                        <td className="border-2 p-2">Publication of draft DSR source list under Mining Office, Nayagarh</td>
-                        <td className="border-2 p-2">Publication of draft DSR source list under Mining Office, Nayagarh</td>
-                        <td className="border-2 p-2">03-06-2025</td>
-                        <td className="border-2 p-2">03-07-2025</td>
-                        <td className="border-2 p-2">Specified.pdf (638.06 KB) <br />
-                            Leterite.pdf (600.42 KB) <br />
-                            DSR STONE.pdf (2.71 MB) <br />
-                            DSR SAND.pdf (1.46 MB)</td>
-                    </tr>
-                    <tr>
-                        <td className="border-2 p-2">2</td>
-                        <td className="border-2 p-2">Proclamation Notice of P.R No-359 under Tahasil Office, Nuagaon</td>
-                        <td className="border-2 p-2">Proclamation Notice of P.R No-359 under Tahasil Office, Nuagaon</td>
-                        <td className="border-2 p-2">01-06-2025</td>
-                        <td className="border-2 p-2">15-06-2025</td>
-                        <td className="border-2 p-2">Proclamation Notice of P.R No-359 (222.34 KB)</td>
-                    </tr>
-                    <tr>
-                        <td className="border-2 p-2">3</td>
-                        <td className="border-2 p-2">Proclamation Notice of P.R No-358 under Tahasil Office, Nuagaon</td>
-                        <td className="border-2 p-2">Proclamation Notice of P.R No-358 under Tahasil Office, Nuagaon </td>
-                        <td className="border-2 p-2">01-06-2025</td>
-                        <td className="border-2 p-2">15-06-2025</td>
-                        <td className="border-2 p-2">Proclamation Notice of P.R No-358 (230.9 KB)</td>
-                    </tr>
-                </tbody>
-            </table>
+          <table>
+            <thead>
+              <tr>
+                <th className="bg-green-800 text-white p-2 text-left border-2">
+                  Sr. No.
+                </th>
+                <th className="bg-green-800 text-white p-2 text-left border-2">
+                  Title
+                </th>
+                <th className="bg-green-800 text-white p-2 text-left border-2">
+                  Description
+                </th>
+                <th className="bg-green-800 text-white p-2 text-left border-2">
+                  Start Date
+                </th>
+                <th className="bg-green-800 text-white p-2 text-left border-2">
+                  End Date
+                </th>
+                <th className="bg-green-800 text-white p-2 text-left border-2">
+                  Download/Details
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border-2 p-2">1</td>
+                <td className="border-2 p-2">
+                  Publication of draft DSR source list under Mining Office,
+                  Nayagarh
+                </td>
+                <td className="border-2 p-2">
+                  Publication of draft DSR source list under Mining Office,
+                  Nayagarh
+                </td>
+                <td className="border-2 p-2">03-06-2025</td>
+                <td className="border-2 p-2">03-07-2025</td>
+                <td className="border-2 p-2">
+                  Specified.pdf (638.06 KB) <br />
+                  Leterite.pdf (600.42 KB) <br />
+                  DSR STONE.pdf (2.71 MB) <br />
+                  DSR SAND.pdf (1.46 MB)
+                </td>
+              </tr>
+              <tr>
+                <td className="border-2 p-2">2</td>
+                <td className="border-2 p-2">
+                  Proclamation Notice of P.R No-359 under Tahasil Office,
+                  Nuagaon
+                </td>
+                <td className="border-2 p-2">
+                  Proclamation Notice of P.R No-359 under Tahasil Office,
+                  Nuagaon
+                </td>
+                <td className="border-2 p-2">01-06-2025</td>
+                <td className="border-2 p-2">15-06-2025</td>
+                <td className="border-2 p-2">
+                  Proclamation Notice of P.R No-359 (222.34 KB)
+                </td>
+              </tr>
+              <tr>
+                <td className="border-2 p-2">3</td>
+                <td className="border-2 p-2">
+                  Proclamation Notice of P.R No-358 under Tahasil Office,
+                  Nuagaon
+                </td>
+                <td className="border-2 p-2">
+                  Proclamation Notice of P.R No-358 under Tahasil Office,
+                  Nuagaon{" "}
+                </td>
+                <td className="border-2 p-2">01-06-2025</td>
+                <td className="border-2 p-2">15-06-2025</td>
+                <td className="border-2 p-2">
+                  Proclamation Notice of P.R No-358 (230.9 KB)
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
